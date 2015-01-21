@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Example</title>
+  <style type="text/css"></style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+</head>
+<body>
+       <div class="container">
+           <div><h1>StackOverflow Example</h1></div>
+           <div>Insert user id (Number only) in order to see nice D3 graph of the user network activities</div>
+           <div class="input-group col-md-4">
+               <input type="number" min="0"  id="userId" required="true" class="form-control  numbersOnly ">
+               <span class="input-group-btn">
+                    <button class="btn btn-default" onclick="generateStackOverflowActivitiesByUserId($('#userId').val())" type="button">Query</button>
+               </span>
+           </div>
+
+           <div class="row">
+                <div id="items"></div>
+            </div>
+       </div>
+
+   <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+   <script src="../bower_components/d3/d3.min.js"></script>
+   <script src="index.js"></script>
+   <script src="buuble.js"></script>
+
+</body>
+</html>
